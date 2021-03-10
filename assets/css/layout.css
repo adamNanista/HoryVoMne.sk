@@ -1,0 +1,253 @@
+
+/* General */
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Header */
+
+.header {
+	padding: 16px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 10;
+}
+.header.scrolled {
+	background-color: #ffffff;
+	box-shadow: 0 10px 20px rgba(12, 31, 64, 0.16);
+}
+
+.header.scrolled .branding .shape-fill {
+	fill: #0c1f40;
+}
+
+.header__navigation {
+	position: relative;
+}
+.header .navigation__icons {
+	padding: 16px;
+}
+.header.scrolled .navigation__trigger span {
+	background-color: #0c1f40;
+}
+
+@media (min-width: 1025px) {
+	.header {
+		padding: 24px;
+	}
+	.header.scrolled .navigation {
+		color: #0c1f40;
+	}
+	.header.scrolled .navigation__menu__item:after {
+		background-color: #0c1f40;
+	}
+	.header .navigation__icons {
+		padding: 12px;
+	}
+	.header .navigation__icons__anchor {
+		background-color: #3a4d6d;
+	}
+	.header.scrolled .navigation__icons__anchor {
+		background-color: #0c1f40;
+	}
+}
+
+/* Hero */
+
+.hero {
+	padding: 122px 16px 32px;
+	
+	color: #ffffff;
+	text-align: center;
+	
+	background-color: #00314d;
+	background-image: url(../images/hero-background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+.hero__heading__icon {
+	display: block;
+	height: 96px;
+	margin: 0 auto 32px;
+	width: 96px;
+}
+.hero .icon__list__item {
+	margin-top: 24px;
+}
+
+@media (min-width: 1025px) {
+	.hero {
+		padding: 154px 24px 48px;
+	}
+	.hero__heading__icon {
+		display: inline-block;
+		margin: 0 24px 0 0;
+		vertical-align: middle;
+	}
+}
+
+@media (min-width: 1280px) {
+	.hero {
+		padding: 202px 48px 96px;
+	}
+	.hero .icon__list__item {
+		margin-top: 48px;
+	}
+	.hero__heading__icon {
+		height: 128px;
+		width: 128px;
+	}
+}
+
+/* Block */
+
+.block {
+	padding: 32px 16px;
+	
+	color: #767676;
+}
+.block h2 {
+	margin-bottom: 16px;
+}
+
+@media (min-width: 1025px) {
+	.block {
+		padding: 48px 24px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.block {
+		padding: 72px 48px;
+	}
+	.block h2 {
+		margin-bottom: 24px;
+	}
+}
+
+/* Footer */
+
+.footer {
+	margin-top: 32px;
+	padding: 32px 16px;
+	
+	color: #ffffff;
+	
+	background-color: #0c1f40;
+}
+
+.footer__branding, 
+.footer__info {
+	margin-bottom: 32px;
+}
+.footer__description {
+	margin-bottom: 32px;
+	
+	font-size: 14px;
+	line-height: 25px;
+}
+.footer .sitemap__sublist__anchor:hover {
+	color: #ffffff;
+}
+.footer .navigation__icons__anchor {
+	background-color: #3a4d6d;
+}
+
+@media (min-width: 768px) {
+	.footer__branding {
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+		max-width: 100%;
+		min-width: 100%;
+	}
+	.footer__info {
+		-ms-flex-preferred-size: 33.33333%;
+		flex-basis: 33.33333%;
+		margin-bottom: 0;
+		max-width: 33.33333%;
+		min-width: 33.33333%;
+		padding-right: 32px;
+	}
+	.footer__navigation {
+		-ms-flex-preferred-size: 66.66667%;
+		flex-basis: 66.66667%;
+		margin-top: -8px;
+		max-width: 66.66667%;
+		min-width: 66.66667%;
+	}
+}
+
+@media (min-width: 1025px) {
+	.footer {
+		margin-top: 48px;
+		padding: 48px 24px;
+	}
+	.footer__info {
+		padding-right: 48px;
+	}
+	.footer__navigation {
+		margin-top: -12px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.footer {
+		padding: 48px;
+	}
+	.footer__info {
+		-ms-flex-preferred-size: 25%;
+		flex-basis: 25%;
+		max-width: 25%;
+		min-width: 25%;
+	}
+	.footer__navigation {
+		-ms-flex-preferred-size: 75%;
+		flex-basis: 75%;
+		max-width: 75%;
+		min-width: 75%;
+	}
+}
+
+/* BottomBar */
+
+.bottombar {
+	padding: 16px;
+	
+	color: #7b8698;
+	
+	background-color: #0c1f40;
+}
+.bottombar .menu__list__item:hover {
+	color: #ffffff;
+}
+.bottombar__navigation .menu__list__item {
+	margin-right: 16px;
+}
+
+@media (min-width: 1025px) {
+	.bottombar {
+		padding: 24px;
+	}
+	.bottombar__navigation .menu__list__item {
+		margin-right: 24px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.bottombar {
+		padding: 48px;
+	}
+}

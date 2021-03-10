@@ -1,0 +1,35 @@
+
+/* General */
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+strong {
+	font-weight: 900;
+	font-style: italic;
+}
+
+/* Headings */
+
+h1 {
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 46px;
+}
+h2 {
+	color: #0c1f40;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 32px;
+}
+
+@media (min-width: 1280px) {
+	h1 {
+		font-size: 48px;
+		line-height: 60px;
+	}
+	h2 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+}

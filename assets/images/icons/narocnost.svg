@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="48px" height="48px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" preserveAspectRatio="xMidYMid meet" xml:space="preserve">
+<g>
+	<path style="fill:#F28C38;" d="M40,48h-2c-1.1,0-2-0.9-2-2V2c0-1.1,0.9-2,2-2h2c1.1,0,2,0.9,2,2v44C42,47.1,41.1,48,40,48z"/>
+</g>
+<g>
+	<path style="fill:#F28C38;" d="M30,48h-2c-1.1,0-2-0.9-2-2V10c0-1.1,0.9-2,2-2h2c1.1,0,2,0.9,2,2v36C32,47.1,31.1,48,30,48z"/>
+</g>
+<g>
+	<path style="fill:#F28C38;" d="M20,48h-2c-1.1,0-2-0.9-2-2V18c0-1.1,0.9-2,2-2h2c1.1,0,2,0.9,2,2v28C22,47.1,21.1,48,20,48z"/>
+</g>
+<g>
+	<path style="fill:#F28C38;" d="M10,48H8c-1.1,0-2-0.9-2-2V26c0-1.1,0.9-2,2-2h2c1.1,0,2,0.9,2,2v20C12,47.1,11.1,48,10,48z"/>
+</g>
+</svg>

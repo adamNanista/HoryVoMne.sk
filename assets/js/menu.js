@@ -30,12 +30,14 @@ var ToggleMenu = (function () {
 	}
 	
 	function closeModule(element) {
+		document.querySelector('body').classList.remove('block-scroll');
 		element.toggle.classList.remove('opened');
 		element.module.classList.remove('opened');
 		element.module.setAttribute('data-toggle', 'true');
 	}
 
 	function openModule(element) {
+		document.querySelector('body').classList.add('block-scroll');
 		element.toggle.classList.add('opened');
 		element.module.classList.add('opened');
 		element.module.setAttribute('data-toggle', 'false');

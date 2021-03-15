@@ -22,6 +22,10 @@ h2 {
 	font-weight: 300;
 	line-height: 32px;
 }
+p, ul, ol, dl, table {
+	font-size: 14px;
+	line-height: 25px;
+}
 
 @media (min-width: 1280px) {
 	h1 {
@@ -31,5 +35,9 @@ h2 {
 	h2 {
 		font-size: 30px;
 		line-height: 40px;
+	}
+	p, ul, ol, dl, table {
+		font-size: 18px;
+		line-height: 30px;
 	}
 }

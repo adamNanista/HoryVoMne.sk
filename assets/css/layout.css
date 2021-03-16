@@ -30,8 +30,15 @@ body.block-scroll {
 	box-shadow: 0 10px 20px rgba(12, 31, 64, 0.16);
 }
 
-.header.scrolled .branding .shape-fill {
-	fill: #0c1f40;
+.header .branding--dark {
+	display: none;
+}
+
+.header.scrolled .branding--dark {
+	display: block;
+}
+.header.scrolled .branding--light {
+	display: none;
 }
 
 .header__navigation {

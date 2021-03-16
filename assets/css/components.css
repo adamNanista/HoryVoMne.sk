@@ -301,15 +301,12 @@ section {
 /* Branding */
 
 .branding, 
-.branding svg {
+.branding__img {
 	display: block;
 }
-.branding svg {
+.branding__img {
 	height: 58px;
 	width: 94px;
-}
-.branding .shape-fill {
-	fill: #ffffff;
 }
 
 /* Icon List */
@@ -401,6 +398,14 @@ a.icon__list__anchor:hover .icon__list__icon {
 /* Product List */
 
 .product__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
 	margin-left: -8px;
 	margin-right: -8px;
 	
@@ -409,6 +414,11 @@ a.icon__list__anchor:hover .icon__list__icon {
 	line-height: 30px;
 }
 .product__list__item {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
 	-ms-flex-preferred-size: 100%;
 	flex-basis: 100%;
 	max-width: 100%;
@@ -447,10 +457,12 @@ a.icon__list__anchor:hover .icon__list__icon {
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
-.product__list__title {
+.product__list__content {
+	bottom: 0;
+	left: 0;
+	padding: 16px;
 	position: absolute;
-	bottom: 16px;
-	left: 16px;
+	right: 0;
 	z-index: 2;
 }
 
@@ -475,9 +487,8 @@ a.icon__list__anchor:hover .icon__list__icon {
 		min-width: 33.33333%;
 		padding: 12px;
 	}
-	.product__list__title {
-		bottom: 24px;
-		left: 24px;
+	.product__list__content {
+		padding: 24px;
 	}
 }
 
@@ -485,16 +496,15 @@ a.icon__list__anchor:hover .icon__list__icon {
 	.product__list {
 		margin-left: -24px;
 		margin-right: -24px;
+		
+		font-size: 24px;
+		line-height: 36px;
 	}
 	.product__list__item {
 		padding: 24px;
 	}
 	.product__list__anchor {
 		border-radius: 8px;
-	}
-	.product__list__title {
-		font-size: 24px;
-		line-height: 36px;
 	}
 }
 
@@ -934,37 +944,26 @@ a.icon__list__anchor:hover .icon__list__icon {
 	border: 1px solid #e0e2e6;
 	border-radius: 4px;
 }
-.testimonial__heading {
-	margin-bottom: 16px;
-	min-height: 48px;
-	padding-left: 60px;
-	position: relative;
+.testimonial__heading .icon__list {
+	margin-top: -8px;
+	margin-bottom: 8px;
 	
-	font-size: 18px;
-	line-height: 30px;
+	font-size: 14px;
+	line-height: 25px;
 }
-.testimonial__avatar, 
-.testimonial__name, 
-.testimonial__location {
-	display: block;
-}
-.testimonial__avatar {
-	left: 0;
+.testimonial__heading .icon__list__icon {
+	margin-right: 16px;
 	height: 48px;
-	position: absolute;
-	top: 0;
 	width: 48px;
 	
 	border-radius: 50%;
 }
-.testimonial__name {
+.testimonial__heading .icon__list__title {
 	color: #0c1f40;
 }
-.testimonial__location {
-	margin-top: -5px;
-	
-	font-size: 14px;
-	line-height: 25px;
+.testimonial__heading .icon__list__description {
+	font-size: 12px;
+	line-height: 21px;
 }
 .testimonial__content *:last-child {
 	margin-bottom: 0;
@@ -982,8 +981,9 @@ a.icon__list__anchor:hover .icon__list__icon {
 	.testimonial {
 		padding: 24px;
 	}
-	.testimonial__heading {
-		margin-bottom: 24px;
+	.testimonial__heading .icon__list {
+		margin-top: -12px;
+		margin-bottom: 12px;
 	}
 }
 
@@ -998,5 +998,23 @@ a.icon__list__anchor:hover .icon__list__icon {
 	
 	.testimonial {
 		border-radius: 8px;
+	}
+	.testimonial__heading .icon__list {
+		margin-top: -24px;
+		margin-bottom: 0;
+		
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.testimonial__heading .icon__list__icon {
+		height: 64px;
+		width: 64px;
+	}
+	.testimonial__heading .icon__list__content {
+		margin-top: 4px;
+	}
+	.testimonial__heading .icon__list__description {
+		font-size: 14px;
+		line-height: 25px;
 	}
 }

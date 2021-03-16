@@ -4,6 +4,7 @@
 	new Splide( '.partners', {
 		type: 'loop', 
 		perPage: 6, 
+		perMove: 1, 
 		pagination: false, 
 		breakpoints: {
 			1024: {
@@ -17,6 +18,7 @@
 	new Splide( '.testimonials', {
 		type: 'loop', 
 		perPage: 3, 
+		perMove: 1, 
 		pagination: false, 
 		breakpoints: {
 			1024: {

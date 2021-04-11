@@ -58,6 +58,15 @@ body.block-scroll {
 	.header.scrolled .navigation {
 		color: #0c1f40;
 	}
+	.header.scrolled .navigation__submenu {
+		color: #767676;
+	}
+	.header.scrolled .navigation__submenu__item {
+		background-color: #f0f2f5;
+	}
+	.header.scrolled .navigation__submenu__item + .navigation__submenu__item {
+		border-top: 1px solid #e0e2e6;
+	}
 	.header .navigation__icons {
 		padding: 12px;
 	}
@@ -83,7 +92,7 @@ body.block-scroll {
 	color: #ffffff;
 	text-align: center;
 	
-	background-color: #00314d;
+	background-color: #0c1f40;
 	background-position: center;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -94,10 +103,12 @@ body.block-scroll {
 .hero--category {
 	background-image: url(../images/hero-background.jpg);
 }
+.hero--product, 
+.hero--static {
+	text-align: left;
+}
 .hero--product {
 	padding: 122px 16px 24px;
-	
-	text-align: left;
 }
 .hero__product__image {
 	bottom: 0;
@@ -404,6 +415,70 @@ body.block-scroll {
 	}
 	.product__options .icon__list__description {
 		margin-top: 12px;
+	}
+}
+
+/* Contact */
+
+.contact__info .icon__list__icon {
+	margin-right: 16px;
+	height: 48px;
+	width: 48px;
+}
+.contact__info .icon__list__title {
+	margin-bottom: 8px;
+	
+	color: #0c1f40;
+	font-size: 18px;
+	line-height: 30px;
+}
+.contact__info .icon__list__link i {
+	color: #0c1f40;
+}
+.contact__info .icon__list__link + .icon__list__link {
+	margin-top: 4px;
+}
+
+@media (min-width: 768px) {
+	.contact__form .form {
+		margin-top: -110px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.contact__form .form {
+		margin-top: -142px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.inner__section--two-col .inner__section__column.contact__info {
+		-ms-flex-preferred-size: 66.66666%;
+		flex-basis: 66.66666%;
+		max-width: 66.66666%;
+		min-width: 66.66666%;
+	}
+	.inner__section--two-col .inner__section__column.contact__form {
+		-ms-flex-preferred-size: 33.33333%;
+		flex-basis: 33.33333%;
+		max-width: 33.33333%;
+		min-width: 33.33333%;
+	}
+	.contact__info .icon__list__icon {
+		margin-right: 32px;
+		height: 64px;
+		width: 64px;
+	}
+	.contact__info .icon__list__title {
+		margin-bottom: 12px;
+		font-size: 24px;
+		line-height: 36px;
+	}
+	.contact__info .icon__list__link + .icon__list__link {
+		margin-top: 6px;
+	}
+	.contact__form .form {
+		margin-top: -228px;
 	}
 }
 

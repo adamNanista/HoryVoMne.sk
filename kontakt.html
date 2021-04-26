@@ -129,21 +129,42 @@
 					</div>
 					<div class="contact__form inner__section__column">
 						<form class="form">
-							<div class="form__group">
-								<strong class="form__title">Napíšte nám</strong>
-							</div>
-							<div class="form__group">
-								<input type="text" class="form__element transition" placeholder="Meno" />
-							</div>
-							<div class="form__group">
-								<input type="text" class="form__element error transition" placeholder="Email" />
-								<span class="error__message"><i class="fas fa-exclamation-circle"></i>Prosím, opravte tento údaj</span>
-							</div>
-							<div class="form__group">
-								<textarea class="form__element transition" placeholder="Správa" rows="3"></textarea>
-							</div>
-							<div class="form__group">
-								<button class="form__submit transition">Odoslať</button>
+							<div class="form__block form__block--grey">
+								<div class="form__group">
+									<h2 class="form__title"><strong>Napíšte nám</strong></h2>
+								</div>
+								<div class="form__group">
+									<div class="form__control">
+										<input type="text" class="form__element transition" placeholder="Meno" />
+									</div>
+								</div>
+								<div class="form__group">
+									<div class="form__control">
+										<input type="text" class="form__element error transition" placeholder="Email" />
+										<span class="error__message"><i class="fas fa-exclamation-circle"></i>Prosím, opravte tento údaj</span>
+									</div>
+								</div>
+								<div class="form__group">
+									<div class="form__control">
+										<textarea class="form__element transition" placeholder="Správa" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="form__group">
+									<div class="form__control">
+										<label class="form__consent">
+											<input type="checkbox" class="form__consent__input" />
+											<span class="form__consent__checkmark transition">
+												<i class="fas fa-check"></i>
+											</span>
+											<span class="form__consent__content">Súhlasím so <a href="#" class="open__popup" data-popup="osobne-udaje__popup">spracovaním osobných údajov</a>.</span>
+										</label>
+									</div>
+								</div>
+								<div class="form__group">
+									<div class="form__control">
+										<button class="form__submit transition">Odoslať</button>
+									</div>
+								</div>
 							</div>
 						</form>
 					</div>
@@ -153,7 +174,7 @@
 	</main>
 	
 	<footer class="footer">
-		<div class="container m-flexbox m-flexbox__wrap">
+		<div class="container l-flexbox l-flexbox__wrap">
 			<div class="footer__branding">
 				<a href="#" class="branding">
 					<img src="assets/images/logo--light.svg" alt="HoryVoMne.sk" class="branding__img" />
@@ -237,10 +258,23 @@
 		</div>
 	</div>
 	
+	<div class="popup" id="osobne-udaje__popup" data-toggle="true">
+		<div class="popup__container">
+			<div class="popup__header">
+				<a href="#" class="popup__close"><i class="fas fa-times"></i></a>
+				<p class="popup__title"><strong>Spracovanie osobných údajov</strong></p>
+			</div>
+			<div class="popup__content">
+				<p>Vaše údaje zadané do kontaktného formulára budú odoslané konkrétnemu predajcovi. Vaše údaje zadané do kontaktného formulára budú odoslané konkrétnemu predajcovi. Vaše údaje zadané do kontaktného formulára budú odoslané konkrétnemu predajcovi. Vaše údaje zadané do kontaktného formulára budú odoslané konkrétnemu predajcovi. Vaše údaje zadané do kontaktného formulára budú odoslané konkrétnemu predajcovi. Vaše údaje zadané do kontaktného formulára budú odoslané konkrétnemu predajcovi. Vaše údaje zadané do kontaktného formulára budú odoslané konkrétnemu predajcovi. Vaše údaje zadané do kontaktného formulára budú odoslané konkrétnemu predajcovi.</p>
+			</div>
+		</div>
+	</div>
+	
 	<script src="assets/js/JSslider.js"></script>
 	<script src="assets/js/header.js"></script>
 	<script src="assets/js/menu.js"></script>
 	<script src="assets/js/sliders.js"></script>
+	<script src="assets/js/popup.js"></script>
 </body>
 
 </html>
